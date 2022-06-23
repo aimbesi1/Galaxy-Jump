@@ -14,6 +14,7 @@ export default class OptionsScene extends Phaser.Scene {
   preload () {
   }
   create () {
+    // Check the localstorage for the highest level cleared and the flags for 100% completing each level, and update the UI accordingly.
     this.model = this.sys.game.globals.model;
 
     this.course1Button = new Button(this, config.width/2 - 200, config.height/2 - 100, 'blueButton1', 'blueButton2', 'Scene 1', 'Course1');
